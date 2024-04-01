@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -24,7 +25,7 @@ class _CameraPageState extends State<CameraPage> {
               setState(() {});
             },
             child: const Text("Camera")),
-        (image != null) ? (kIsWeb) ? Image.network(image!.path) : Image.file(File(image!.path)) : Container()
+        // (image != null) ? (kIsWeb) ? Image.network(image!.path) : Image.file(File(image!.path)) : Container()
       ]),
     );
   }
