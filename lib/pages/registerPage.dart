@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:train2/pages/loginPage.dart';
 
